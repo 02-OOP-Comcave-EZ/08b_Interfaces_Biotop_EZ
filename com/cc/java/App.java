@@ -29,11 +29,22 @@ public class App {
     }
 
    
-    private static void output(String outputStr) {
-        System.out.println(outputStr);
+    // private static void output(String outputStr) {
+    //     System.out.println(outputStr);
+    // }
+
+     //--- Überladung ----//
+     private static void pollObj(Bird obj){
+        output(obj.hasFeathers());
+        output(obj.fly());
+        output("-----------------");
     }
 
 
+   
+    private static void output(String outputStr) {
+        System.out.println(outputStr);
+    }
 
 }
 
